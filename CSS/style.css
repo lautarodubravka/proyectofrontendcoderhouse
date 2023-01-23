@@ -93,14 +93,34 @@ p {
   margin-bottom: 2rem; }
 
 /* TARJETAS SERVICIOS */
+.card-section {
+  margin-bottom: 80px; }
+
 .card-img-top {
   object-fit: contain; }
 
 .card-responsive {
   width: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
+    .card-responsive {
+      flex-wrap: nowrap;
+      /* no wrap */
+      width: 32%; } }
+  @media (min-width: 768px) and (max-width: 1199px) {
     .card-responsive {
       width: 32%; } }
+  @media (max-width: 767px) {
+    .card-responsive {
+      flex-wrap: wrap;
+      /* wrap */
+      width: 100%; } }
+
+.card-text {
+  color: #252323; }
+
+/*SOBRE NOSOTROS*/
+.text-margin {
+  margin: 0 40px; }
 
 /*SLIDER SERVICIOS*/
 .small-img, #carouselExampleInterval .carousel-item img {
@@ -154,7 +174,7 @@ input:not([type="submit"]), textarea, select {
   padding: 1rem;
   display: block;
   width: 95%;
-  background-color: #f1eeee;
+  background-color: #c6d6d5;
   margin-bottom: 1.5rem;
   border: none;
   border-radius: 5px; }

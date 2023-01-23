@@ -119,17 +119,38 @@ display: block;
     }
 
        /* TARJETAS SERVICIOS */
-   
+       .card-section {
+        margin-bottom: 80px;
+    }
+    
        .card-img-top {
         object-fit: contain;
       }
       
       .card-responsive {
         width: 100%;
-        @media (min-width: 768px) {
+        @media (min-width: 1200px) {
+            flex-wrap: nowrap; /* no wrap */
+            width:32%;
+        }
+        @media (min-width: 768px) and (max-width: 1199px) {
             width: 32%;
         }
+        @media (max-width: 767px) {
+            flex-wrap: wrap; /* wrap */
+            width:100%;
+        }
     }
+    .card-text {
+        color: $card-text-color;
+    }
+    
+ /*SOBRE NOSOTROS*/
+
+ .text-margin {
+    margin: 0 40px;
+}
+
     
     /*SLIDER SERVICIOS*/
 // Variables
