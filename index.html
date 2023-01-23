@@ -10,9 +10,9 @@
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
    <!--CSS-->
-   <link rel="stylesheet" type="text/css" href="../CSS/styles.css"/>
+   <link rel="stylesheet" type="text/css" href="./CSS/style.css"/>
     <!--SASS-->
-    <link rel="stylesheet" type="text/css" href="../scss/style.css">
+    <link rel="stylesheet" type="text/scss" href="./scss/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -38,73 +38,96 @@
 <section>
   <h2>NUESTROS PRODUCTOS</h2>
 </section>
-<section id="productos">
+<section id="productos" class="d-flex justify-content-center">
   <div class="row">
-  <div class="card card-responsive mx-20 col-12 col-md-4 text-center">
-    <img src="./img/nodes.jpg" class="card-img-top" alt="cerebro en nodos">
-    <div class="card-body">
-      <p class="card-text">BRAIN AI es nuestro producto insignia. Lleve su cerebro al siguiente nivel con ayuda de la inteligencia artificial.</p>
+    <div class="card card-responsive mx-3 my-3 col-12 col-md-4 text-center">
+      <img src="./img/nodes.jpg" class="card-img-top" alt="cerebro en nodos">
+      <div class="card-body">
+        <p class="card-text">BRAIN AI es nuestro producto insignia. Lleve su cerebro al siguiente nivel con ayuda de la inteligencia artificial.</p>
+      </div>
+    </div>
+    <div class="card card-responsive mx-3 my-3 col-12 col-md-4 text-center">
+      <img src="./img/face.jpg" class="card-img-top" alt="cara virtual">
+      <div class="card-body">
+        <p class="card-text">FACE AI es capaz de crear avatares virtuales realistas personalizados, incluso para videollamadas en tiempo real. </p>
+      </div>
+    </div>
+    <div class="card card-responsive mx-3 my-3 col-12 col-md-4 text-center">
+      <img src="./img/ia.webp" class="card-img-top" alt="nodos que forman un cerebro y código">
+      <div class="card-body">
+        <p class="card-text">BRAIN CLOUD sube sus ideas directamente a la nube en tiempo real. Guarde para siempre su mente en la nube.</p>
+      </div>
     </div>
   </div>
-  
-  <div class="card card-responsive mx-20 col-12 col-md-4 text-center">
-    <img src="./img/face.jpg" class="card-img-top" alt="cara virtual">
-    <div class="card-body">
-      <p class="card-text">FACE AI es capaz de crear avatares virtuales realistas personalizados, incluso para videollamadas en tiempo real. </p>
-    </div>
-  </div>
-
-  <div class="card card-responsive mx-20 col-12 col-md-4 text-center">
-    <img src="./img/ia.webp" class="card-img-top" alt="nodos que forman un cerebro y código">
-    <div class="card-body">
-      <p class="card-text">BRAIN CLOUD sube sus ideas directamente a la nube en tiempo real. Guarde para siempre su mente en la nube.</p>
-    </div>
-  </div>
-</div>
-</div>
 </section>
 
 <!-- NOSOTROS -->
 
 <section id="nosotros">
-  <div>
-    <h2>SOBRE NOSOTROS</h2>
-    <p>
-      INTELLIGENCE AI es una empresa fundada en 2014 en Argentina que se dedica a innovar en inteligencia artificial y productos de biotecnología. 
-      Nuestros valores son la creatividad, la innovación y la excelencia en el desarrollo de tecnologías avanzadas. 
-      Nuestros productos, como BRAIN AI, FACE AI Y BRAIN CLOUD, han revolucionado la industria al unir la inteligencia artificial, la información en la nube 
-      y el potencial creativo del cerebro humano, haciendo a las personas más inteligentes y capaces. 
-      Nuestra misión es mejorar la vida de las personas a través de la inteligencia artificial y la biotecnología, 
-      haciendo a los humanos más inteligentes y la vida más fácil. En el futuro, nos esforzaremos por continuar liderando en la investigación 
-      y el desarrollo de tecnologías de vanguardia para ayudar a las personas a vivir una vida más saludable, productiva y feliz.
-    </p>
+  <div class="row">
+    <div class="col-lg-6 col-12">
+      <h2>SOBRE NOSOTROS</h2>
+      <p>
+        INTELLIGENCE AI es una empresa de Argentina fundada en 2014 que se dedica a innovar en inteligencia artificial y biotecnología. 
+        Sus valores son la creatividad, innovación y excelencia en el desarrollo de tecnologías avanzadas. 
+        Sus productos, como BRAIN AI, FACE AI y BRAIN CLOUD, han revolucionado la industria al combinar la inteligencia artificial, 
+        la información en la nube y el potencial creativo del cerebro humano. 
+        Su misión es mejorar la vida de las personas a través de la inteligencia artificial y la biotecnología. 
+        En el futuro, buscarán continuar liderando en investigación y desarrollo de tecnologías avanzadas 
+        para ayudar a las personas a vivir una vida más saludable, productiva y feliz.
+      </p>
+    </div>
+    <div class="col-lg-6 col-12">
+      <!-- Inicio del carrousel -->
+      <div id="carouselExampleInterval" class="carousel slide d-lg-block d-none" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img src="./img/BRAIN AI.jpg" class="d-block" style="width:100%; height:auto" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="./img/FACE AI WOMAN 2.jpg" class="d-block" style="width:100%; height:auto" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="./img/BRAIN CLOUD.webp" class="d-block" style="width:100%; height:auto" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row d-lg-none">
+    <div class="col-12">
+      <div id="carouselExampleInterval" class="carousel slide d-block" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img src="./img/BRAIN AI.jpg" class="d-block" style="width:100%; height:auto" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="./img/FACE AI WOMAN 2.jpg" class="d-block" style="width:100%; height:auto" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="./img/BRAIN CLOUD.webp" class="d-block" style="width:100%; height:auto" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
   </div>
 </section>
-<!--CARROUSEL SOBRE NOSOTROS-->
-<section>
-<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="1000">
-      <img src="./img/BRAIN AI.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item" data-bs-interval="1000">
-      <img src="./img/FACE AI WOMAN 2.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item" data-bs-interval="1000">
-      <img src="./img/BRAIN CLOUD.webp" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</section>
-
 
 <!--FOOTER-->
 
@@ -114,10 +137,10 @@
         <a href="./nosotros.html">Nosotros</a>
         <a href="./servicios.html">Servicios</a>
         <a href="./contacto.html">Contacto</a>
-    </nav>
+      </nav>
             <p class="copyright">Todos los derechos reservados, 2023&copy; </p>
     </div>
-</footer>
+  </footer>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

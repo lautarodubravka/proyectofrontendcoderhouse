@@ -33,7 +33,7 @@ max-width: 100%;
 .contenedor {
 width: 95%;
 max-width: 120rem;
-margin: 0 auto;
+margin: 2rem auto;
 }
 h1, h2, h3, h4 {
 color: $color-terciario;
@@ -53,6 +53,10 @@ font-size: 3rem;
 }
 h4 {
 font-size: 2.6rem;
+}
+
+p {
+  color: $color-terciario;
 }
 
 /* Header */
@@ -179,51 +183,51 @@ $slider-width: 80%;
 
     /*FORMULARIO DE CONTACTO*/
     
-    .contacto {
-    p {
-    font-size: $font-size-base;
-    color: $color-terciario;
-    margin: 2rem 0 0 0;
-    }
+    %contacto-text {
+        font-size: $font-size-base;
+        color: $color-principal;
+        margin: $spacer-vertical 0 0 0;
     }
     
     legend {
-    font-size: $font-size-big;
-    color: $color-terciario;
+        font-size: $font-size-big;
+        color: $color-terciario;
     }
     
     label {
-    font-weight: $font-weight-bold;
-    text-transform: uppercase;
-    display: block;
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+        display: block;
     }
     
     input:not([type="submit"]), textarea, select {
-    padding: $spacer;
-    display: block;
-    width: 95%;
-    background-color: $gray-lightest;
-    margin-bottom: $spacer-vertical;
-    border: none;
-    border-radius: $border-radius-base;
+        @extend %contacto-text;
+        padding: $spacer;
+        display: block;
+        width: 95%;
+        background-color: $gray-light;
+        margin-bottom: $spacer-vertical;
+        border: none;
+        border-radius: $border-radius-base;
     }
     
     input[type="radio"] {
-    width: auto;
-    margin: 0;
+        width: auto;
+        margin: 0;
     }
     
     select {
-    appearance: none;
+        appearance: none;
     }
     
     textarea {
-    height: 20rem;
+        height: 20rem;
     }
     
     .forma-contacto {
-    max-width: 30rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+        max-width: $form-width;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
+    

@@ -11,7 +11,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   line-height: 2;
-  background-color: #f3f6fa; }
+  background-color: #0e0f11; }
 
 img {
   max-width: 100%; }
@@ -19,10 +19,10 @@ img {
 .contenedor {
   width: 95%;
   max-width: 120rem;
-  margin: 0 auto; }
+  margin: 2rem auto; }
 
 h1, h2, h3, h4 {
-  color: #ffffff;
+  color: #e6dbdb;
   padding-bottom: 2rem;
   max-width: 60rem;
   line-height: 3; }
@@ -40,9 +40,12 @@ h3 {
 h4 {
   font-size: 2.6rem; }
 
+p {
+  color: #e6dbdb; }
+
 /* Header */
 .site-header {
-  background-color: #1e5ac9;
+  background-color: #0e0f0f;
   padding: 1rem 0 3rem 0;
   /* Navegacion*/ }
   .site-header.inicio {
@@ -70,7 +73,7 @@ h4 {
         justify-content: space-between;
         align-items: center; } }
   .site-header .navegacion a {
-    color: #ffffff;
+    color: #e6dbdb;
     text-decoration: none;
     font-size: 2.2rem;
     display: block; }
@@ -122,25 +125,25 @@ h4 {
 
 /* Footer */
 .site-footer {
-  background-color: #1e5ac9;
+  background-color: #0e0f0f;
   margin: 0; }
   .site-footer .footer-content {
     padding: 3rem 0;
     display: flex;
     justify-content: space-between; }
   .site-footer .copyright {
-    color: #ffffff;
+    color: #e6dbdb;
     margin: 0; }
 
 /*FORMULARIO DE CONTACTO*/
-.contacto p {
+input:not([type="submit"]), textarea, select {
   font-size: 14px;
-  color: #ffffff;
-  margin: 2rem 0 0 0; }
+  color: #0e0f0f;
+  margin: 1.5rem 0 0 0; }
 
 legend {
   font-size: 18px;
-  color: #ffffff; }
+  color: #e6dbdb; }
 
 label {
   font-weight: 700;
@@ -151,7 +154,7 @@ input:not([type="submit"]), textarea, select {
   padding: 1rem;
   display: block;
   width: 95%;
-  background-color: #f1f1f1;
+  background-color: #f1eeee;
   margin-bottom: 1.5rem;
   border: none;
   border-radius: 5px; }
@@ -167,7 +170,7 @@ textarea {
   height: 20rem; }
 
 .forma-contacto {
-  max-width: 30rem;
+  max-width: 600px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
