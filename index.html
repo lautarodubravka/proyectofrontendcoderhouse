@@ -12,7 +12,7 @@
    <!--CSS-->
    <link rel="stylesheet" type="text/css" href="./CSS/style.css"/>
     <!--SASS-->
-    <link rel="stylesheet" type="text/scss" href="./scss/style.css">
+    <link rel="stylesheet" type="text/scss" href="./scss/styles.scss">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -29,40 +29,80 @@
           <a href="./pages/contacto.html">Contacto</a>
       </nav>
     </div>
-      <h1>Creando mejores seres humanos</h1>
+    <h1>El siguiente nivel de inteligencia</h1>
   </div> <!-- contenedor -->
-
 </header>
-
 <!-- TARJETAS BOOTSTRAP SERVICIOS -->
 <section>
   <h2>NUESTROS PRODUCTOS</h2>
+  <section id="productos" class="card-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 text-center">
+          <div class="card">
+            <img src="./img/nodes.jpg" class="card-img-top" alt="cerebro en nodos">
+            <div class="card-body">
+              <p class="card-text">BRAIN AI es nuestro producto insignia. Lleve su cerebro al siguiente nivel con ayuda de la inteligencia artificial.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 text-center">
+          <div class="card">
+            <img src="./img/face.jpg" class="card-img-top" alt="cara virtual">
+            <div class="card-body">
+              <p class="card-text">FACE AI es capaz de crear avatares virtuales realistas personalizados para videollamadas en tiempo real. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 text-center">
+          <div class="card">
+            <img src="./img/ia.webp" class="card-img-top" alt="nodos que forman un cerebro y código">
+            <div class="card-body">
+              <p class="card-text">BRAIN CLOUD sube sus ideas directamente a la nube en tiempo real. Guarde para siempre su mente en la nube.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 text-center">
+          <div class="card">
+            <img src="./img/ia.webp" class="card-img-top" alt="nodos que forman un cerebro y código">
+            <div class="card-body">
+              <p class="card-text">BRAIN CLOUD sube sus ideas directamente a la nube en tiempo real. Guarde para siempre su mente en la nube.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 text-center">
+          <div class="card">
+            <img src="./img/ia.webp" class="card-img-top" alt="nodos que forman un cerebro y código">
+            <div class="card-body">
+              <p class="card-text">BRAIN CLOUD sube sus ideas directamente a la nube en tiempo real. Guarde para siempre su mente en la nube.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 text-center">
+          <div class="card">
+            <img src="./img/ia.webp" class="card-img-top" alt="nodos que forman un cerebro y código">
+            <div class="card-body">
+              <p class="card-text">BRAIN CLOUD sube sus ideas directamente a la nube en tiempo real. Guarde para siempre su mente en la nube.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 </section>
-<section id="productos" class="d-flex justify-content-center card-section">
-  <div class="row">
-    <div class="card card-responsive mx-3 my-3 col-12 col-md-4 text-center">
-      <img src="./img/nodes.jpg" class="card-img-top" alt="cerebro en nodos">
-      <div class="card-body">
-        <p class="card-text">BRAIN AI es nuestro producto insignia. Lleve su cerebro al siguiente nivel con ayuda de la inteligencia artificial.</p>
-      </div>
+<!--CARROUSEL PRINCIPAL-->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/ia-brain.jpeg" class="d-block w-100" alt="cerebro inteligencia artificial">
     </div>
-    <div class="card card-responsive mx-3 my-3 col-12 col-md-4 text-center">
-      <img src="./img/face.jpg" class="card-img-top" alt="cara virtual">
-      <div class="card-body">
-        <p class="card-text">FACE AI es capaz de crear avatares virtuales realistas personalizados, incluso para videollamadas en tiempo real. </p>
-      </div>
+    <div class="carousel-item">
+      <img src="./img/ia.webp" class="d-block w-100" alt="inteligencia artificial">
     </div>
-    <div class="card card-responsive mx-3 my-3 col-12 col-md-4 text-center">
-      <img src="./img/ia.webp" class="card-img-top" alt="nodos que forman un cerebro y código">
-      <div class="card-body">
-        <p class="card-text">BRAIN CLOUD sube sus ideas directamente a la nube en tiempo real. Guarde para siempre su mente en la nube.</p>
-      </div>
+    <div class="carousel-item">
+      <img src="./img/nodes.jpg" class="d-block w-100" alt="imagen de nodos informáticos">
     </div>
   </div>
-</section>
-
+</div>
 <!-- NOSOTROS -->
-
 <section id="nosotros">
   <div class="row">
     <div class="col-lg-6 col-12">
@@ -82,16 +122,16 @@
       <div id="carouselExampleInterval" class="carousel slide d-lg-block d-none" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="1000">
-            <img src="./img/BRAIN AI.jpg" class="d-block" style="width:100%; height:auto" alt="...">
+            <img src="./img/BRAIN AI.jpg" class="d-block" style="width:100%; height:auto" alt="cerebro electronico">
           </div>
           <div class="carousel-item" data-bs-interval="1000">
-            <img src="./img/FACE AI WOMAN 2.jpg" class="d-block" style="width:100%; height:auto" alt="...">
+            <img src="./img/FACE AI WOMAN 2.jpg" class="d-block" style="width:100%; height:auto" alt="reconocimiento facial en mujer">
           </div>
           <div class="carousel-item" data-bs-interval="1000">
-            <img src="./img/BRAIN CLOUD.jpg" class="d-block" style="width:100%; height:auto" alt="...">
+            <img src="./img/BRAIN CLOUD.jpg" class="d-block" style="width:100%; height:auto" alt="cerebro en la nube">
           </div>
           <div class="carousel-item" data-bs-interval="1000">
-            <img src="./img/FACE AI.jpeg" class="d-block" style="width:100%; height:auto" alt="...">
+            <img src="./img/FACE AI.jpeg" class="d-block" style="width:100%; height:auto" alt="reconocimiento facial en cara de hombre">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -110,16 +150,16 @@
       <div id="carouselExampleInterval" class="carousel slide d-block" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="1000">
-            <img src="./img/BRAIN AI.jpg" class="d-block" style="width:100%; height:auto" alt="...">
+            <img src="./img/BRAIN AI.jpg" class="d-block" style="width:100%; height:auto" alt="cerebro electronico">
           </div>
           <div class="carousel-item" data-bs-interval="1000">
-            <img src="./img/FACE AI WOMAN 2.jpg" class="d-block" style="width:100%; height:auto" alt="...">
+            <img src="./img/FACE AI WOMAN 2.jpg" class="d-block" style="width:100%; height:auto" alt="reconocimiento facial en mujer">
           </div>
           <div class="carousel-item" data-bs-interval="1000">
-            <img src="./img/BRAIN CLOUD.jpg" class="d-block" style="width:100%; height:auto" alt="...">
+            <img src="./img/BRAIN CLOUD.jpg" class="d-block" style="width:100%; height:auto" alt="cerebro en la nube">
           </div>
           <div class="carousel-item" data-bs-interval="1000">
-            <img src="./img/FACE AI.jpeg" class="d-block" style="width:100%; height:auto" alt="...">
+            <img src="./img/FACE AI.jpeg" class="d-block" style="width:100%; height:auto" alt="reconocimiento facial en cara de hombre">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -134,9 +174,7 @@
     </div>
   </div>
 </section>
-
 <!--FOOTER-->
-
   <footer class="site-footer seccion">
     <div class="contenedor footer-content">
       <nav class="navegacion">
