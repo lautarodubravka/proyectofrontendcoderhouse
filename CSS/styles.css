@@ -125,7 +125,8 @@ a:hover {
   margin: 6rem 6rem; }
   #carouselExampleInterval .carousel-item img {
     width: 100%;
-    height: auto; }
+    height: auto;
+    align-items: center; }
   #carouselExampleInterval img {
     width: 100%; }
 
