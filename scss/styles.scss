@@ -1,3 +1,16 @@
+$color_1: #ece5e5;
+$color_2: #1dc1d6;
+$color_3: #e6dbdb;
+$color_4: #030303;
+$color_5: white;
+$color_6: #0e77e8;
+$color_7: #252323;
+$color_8: #0e0f0f;
+$font-family_1: "Lato", sans-serif;
+$background-color_1: #0e0f11;
+$background-color_2: #0e0f0f;
+$background-color_3: #c6d6d5;
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,10 +21,10 @@ html {
 	font-size: 62.5%;
 }
 body {
-	font-family: "Lato", sans-serif;
+	font-family: $font-family_1;
 	font-size: 1.6rem;
 	line-height: 3rem;
-	background-color: #0e0f11;
+	background-color: $background-color_1;
 }
 img {
 	max-width: 100%;
@@ -19,46 +32,51 @@ img {
 .contenedor {
 	max-width: 980px;
 	margin: 0 auto;
+	text-align: center;
+	.navegacion {
+		a {
+			display: inline-block;
+			margin-right: 1rem;
+		}
+	}
 }
 h1 {
-	color: #ece5e5;
+	color: $color_1;
 	padding-bottom: 2rem;
 	max-width: 60rem;
 	line-height: 1;
 	font-size: 4rem;
-	color: #ece5e5;
 }
 h2 {
-	color: #ece5e5;
+	color: $color_2;
 	padding-bottom: 2rem;
 	max-width: 60rem;
 	line-height: 1;
 	font-size: 3rem;
 	text-align: center;
-	color: #1dc1d6;
 	margin-top: 4rem;
 	margin-bottom: 2rem;
 }
 h3 {
-	color: #ece5e5;
+	color: $color_1;
 	padding-bottom: 2rem;
 	max-width: 60rem;
 	line-height: 1;
 	font-size: 3rem;
 }
 h4 {
-	color: #ece5e5;
+	color: $color_1;
 	padding-bottom: 2rem;
 	max-width: 60rem;
 	line-height: 1;
 	font-size: 2.6rem;
 }
 p {
-	color: #e6dbdb;
+	color: $color_3;
 	margin-bottom: 2rem;
 }
 .site-header {
-	background-color: #0e0f0f;
+	background-color: $background-color_2;
 	padding: 1rem 0 3rem 0;
 	.contenido-header {
 		height: 100%;
@@ -75,12 +93,12 @@ p {
 	}
 	.navegacion {
 		a {
-			color: #e6dbdb;
+			color: $color_3;
 			text-decoration: none;
 			font-size: 2.2rem;
 			display: block;
 			&:hover {
-				color: #030303;
+				color: $color_4;
 			}
 		}
 	}
@@ -94,7 +112,7 @@ p {
 }
 .navegacion {
 	a {
-		color: rgb(255, 255, 255);
+		color: $color_5;
 		text-decoration: none;
 		font-size: 2rem;
 		display: block;
@@ -106,18 +124,18 @@ a {
 		margin: 0;
 	}
 	&:hover {
-		color: #0e77e8;
+		color: $color_6;
 	}
 }
 .card-section {
-	margin-bottom: 8rem;
+	margin-bottom: 1rem;
 	padding: 2rem 2rem;
 }
 .card {
 	margin-bottom: 1rem;
 }
 .card-text {
-	color: #252323;
+	color: $color_7;
 }
 .card-img-top {
 	width: 100%;
@@ -126,23 +144,19 @@ a {
 }
 .text-margin {
 	margin: 0 40px;
+	margin-bottom: 4rem;
 }
 .small-img {
 	width: 100%;
 	height: auto;
 }
-#carouselExampleInterval {
+#carouselNosotros {
 	.carousel-item {
 		img {
-			width: 100%;
+			width: 50%;
 			height: auto;
-            align-items: center;
+			align-items: center;
 		}
-	}
-	width: 80%;
-	margin: 6rem 6rem;
-	img {
-		width: 100%;
 	}
 }
 .text-center {
@@ -155,7 +169,7 @@ a {
 	max-width: auto;
 }
 .site-footer {
-	background-color: #0e0f0f;
+	background-color: $background-color_2;
 	margin: 2rem;
 }
 .footer-content {
@@ -164,18 +178,18 @@ a {
 	justify-content: space-between;
 }
 .copyright {
-	color: #e6dbdb;
+	color: $color_3;
 	margin-top: 2rem;
 }
 input {
 	&:not([type="submit"]) {
 		font-size: 14px;
-		color: #0e0f0f;
+		color: $color_8;
 		margin: 1.5rem 0 0 0;
 		padding: 1rem;
 		display: block;
 		width: 95%;
-		background-color: #c6d6d5;
+		background-color: $background-color_3;
 		margin-bottom: 1.5rem;
 		border: none;
 		border-radius: 5px;
@@ -183,12 +197,12 @@ input {
 }
 textarea {
 	font-size: 14px;
-	color: #0e0f0f;
+	color: $color_8;
 	margin: 1.5rem 0 0 0;
 	padding: 1rem;
 	display: block;
 	width: 95%;
-	background-color: #c6d6d5;
+	background-color: $background-color_3;
 	margin-bottom: 1.5rem;
 	border: none;
 	border-radius: 5px;
@@ -196,12 +210,12 @@ textarea {
 }
 select {
 	font-size: 14px;
-	color: #0e0f0f;
+	color: $color_8;
 	margin: 1.5rem 0 0 0;
 	padding: 1rem;
 	display: block;
 	width: 95%;
-	background-color: #c6d6d5;
+	background-color: $background-color_3;
 	margin-bottom: 1.5rem;
 	border: none;
 	border-radius: 5px;
@@ -209,7 +223,7 @@ select {
 }
 legend {
 	font-size: 18px;
-	color: #e6dbdb;
+	color: $color_3;
 }
 label {
 	font-weight: 700;

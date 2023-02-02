@@ -18,24 +18,26 @@ img {
 
 .contenedor {
   max-width: 980px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
+  .contenedor .navegacion a {
+    display: inline-block;
+    margin-right: 1rem; }
 
 h1 {
   color: #ece5e5;
   padding-bottom: 2rem;
   max-width: 60rem;
   line-height: 1;
-  font-size: 4rem;
-  color: #ece5e5; }
+  font-size: 4rem; }
 
 h2 {
-  color: #ece5e5;
+  color: #1dc1d6;
   padding-bottom: 2rem;
   max-width: 60rem;
   line-height: 1;
   font-size: 3rem;
   text-align: center;
-  color: #1dc1d6;
   margin-top: 4rem;
   margin-bottom: 2rem; }
 
@@ -99,7 +101,7 @@ a:hover {
   color: #0e77e8; }
 
 .card-section {
-  margin-bottom: 8rem;
+  margin-bottom: 1rem;
   padding: 2rem 2rem; }
 
 .card {
@@ -114,21 +116,17 @@ a:hover {
   object-fit: cover; }
 
 .text-margin {
-  margin: 0 40px; }
+  margin: 0 40px;
+  margin-bottom: 4rem; }
 
 .small-img {
   width: 100%;
   height: auto; }
 
-#carouselExampleInterval {
-  width: 80%;
-  margin: 6rem 6rem; }
-  #carouselExampleInterval .carousel-item img {
-    width: 100%;
-    height: auto;
-    align-items: center; }
-  #carouselExampleInterval img {
-    width: 100%; }
+#carouselNosotros .carousel-item img {
+  width: 50%;
+  height: auto;
+  align-items: center; }
 
 .text-center {
   text-align: center; }

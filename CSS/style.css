@@ -151,15 +151,15 @@ a:hover{
 .text-margin {
   margin: 0 40px; }
 
-/*SLIDER SERVICIOS*/
-.small-img, #carouselExampleInterval .carousel-item img {
+/*SLIDER PRODUCTOS*/
+.small-img, #carouselNosotros .carousel-item img {
   width: 100%;
   height: auto; }
 
-#carouselExampleInterval {
+#carouselNosotros {
   width: 80%;
   margin: 6rem 6rem; }
-  #carouselExampleInterval img {
+  #carouselNosotros img {
     width: 100%; }
 
 /* Utilidades */
