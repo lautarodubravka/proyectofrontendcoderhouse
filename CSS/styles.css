@@ -1,82 +1,3 @@
-.site-header {
-  background-color: #0e0f0f;
-  padding: 1rem 0 3rem 0; }
-  .site-header .contenido-header {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center; }
-    .site-header .contenido-header h1 {
-      font-weight: 300; }
-  .site-header .barra {
-    padding-top: 3rem; }
-  .site-header .navegacion a {
-    color: #e6dbdb;
-    text-decoration: none;
-    font-size: 2.2rem;
-    display: block; }
-    .site-header .navegacion a:hover {
-      color: #030303; }
-
-.site-header.inicio {
-  background-image: url(../img/header.png);
-  background-position: center center;
-  background-size: cover;
-  height: 60vh;
-  min-height: 40rem; }
-
-.navegacion a {
-  color: white;
-  text-decoration: none;
-  font-size: 2rem;
-  display: block;
-  margin: 2rem, 2rem; }
-
-a:last-of-type {
-  margin: 0; }
-
-a:hover {
-  color: #0e77e8; }
-
-.barra {
-  padding-top: 3rem; }
-
-.navegacion a {
-  color: white;
-  text-decoration: none;
-  font-size: 2rem;
-  display: block;
-  margin: 2rem, 2rem; }
-
-a:last-of-type {
-  margin: 0; }
-
-a:hover {
-  color: #0e77e8; }
-
-.text-center {
-  text-align: center; }
-
-.fw-300 {
-  font-weight: 300; }
-
-.centered-content {
-  max-width: auto; }
-
-.site-footer {
-  background-color: #0e0f0f;
-  margin: 2rem; }
-
-.footer-content {
-  padding: 3rem 0;
-  display: flex;
-  justify-content: space-between; }
-
-.copyright {
-  color: #e6dbdb;
-  margin-top: 2rem; }
-
 * {
   margin: 0;
   padding: 0;
@@ -138,6 +59,86 @@ p {
   color: #e6dbdb;
   margin-bottom: 2rem; }
 
+.site-header {
+  background-color: #0e0f0f;
+  padding: 1rem 0 3rem 0; }
+  .site-header .contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center; }
+    .site-header .contenido-header h1 {
+      font-weight: 300; }
+  .site-header .barra {
+    padding-top: 3rem; }
+  .site-header .navegacion a {
+    color: #e6dbdb;
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block; }
+    .site-header .navegacion a:hover {
+      color: #030303; }
+
+.site-header.inicio {
+  background-image: url(../img/header.png);
+  background-position: center center;
+  background-size: cover;
+  height: 60vh;
+  min-height: 40rem; }
+
+.navegacion a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  display: block;
+  margin: 2rem, 2rem; }
+
+a:last-of-type {
+  margin: 0; }
+
+a:hover {
+  color: #0e77e8; }
+
+/*FOOTER*/
+.barra {
+  padding-top: 3rem; }
+
+.navegacion a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  display: block;
+  margin: 2rem, 2rem; }
+
+a:last-of-type {
+  margin: 0; }
+
+a:hover {
+  color: #0e77e8; }
+
+.text-center {
+  text-align: center; }
+
+.fw-300 {
+  font-weight: 300; }
+
+.centered-content {
+  max-width: auto; }
+
+.site-footer {
+  background-color: #0e0f0f;
+  margin: 2rem; }
+
+.footer-content {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between; }
+
+.copyright {
+  color: #e6dbdb;
+  margin-top: 2rem; }
+
 /*CARDS*/
 .card {
   width: 100%;
@@ -164,18 +165,12 @@ p {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 6;
     -webkit-box-orient: vertical; }
 
 .card-section {
   margin-bottom: 1rem;
-  padding: 2rem 2rem; }
-
-@keyframes card-scale {
-  0% {
-    transform: scale(1); }
-  90% {
-    transform: scale(0.5); } }
+  padding: 1rem 1rem; }
 
 .card-text {
   color: #252323; }
@@ -187,7 +182,7 @@ p {
 
 .text-margin {
   margin: 0 40px;
-  margin-bottom: 4rem; }
+  margin-bottom: 1rem; }
 
 .small-img {
   width: 100%;
@@ -282,31 +277,3 @@ input[type="submit"] {
     margin-right: 2rem; }
     .site-header .navegacion a:last-of-type {
       margin: 0; } }
-
-@media (min-width: 576px) {
-  .card {
-    margin-bottom: 1rem; }
-    .card .card-body p {
-      font-size: 1.3rem;
-      text-align: justify; } }
-
-@media (min-width: 768px) {
-  .card {
-    margin-bottom: 1rem; }
-    .card .card-body p {
-      font-size: 1.4rem;
-      text-align: justify; } }
-
-@media (min-width: 992px) {
-  .card {
-    margin-bottom: 1rem; }
-    .card .card-body p {
-      font-size: 1.4rem;
-      text-align: justify; } }
-
-@media (min-width: 1200px) {
-  .card {
-    margin-bottom: 1.5rem; }
-    .card .card-body p {
-      font-size: 1.6rem;
-      text-align: justify; } }
