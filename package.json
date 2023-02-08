@@ -22,6 +22,7 @@
     "nodemon": "^2.0.20"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "bootstrap": "^5.3.0-alpha1"
   },
   "description": ""

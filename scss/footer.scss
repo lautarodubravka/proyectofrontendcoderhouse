@@ -1,0 +1,42 @@
+	.barra {
+		padding-top: 3rem;
+	}
+.navegacion {
+	a {
+		color: $color_5;
+		text-decoration: none;
+		font-size: 2rem;
+		display: block;
+		margin: 2rem, 2rem;
+	}
+}
+a {
+	&:last-of-type {
+		margin: 0;
+	}
+	&:hover {
+		color: $color_6;
+	}
+}
+.text-center {
+	text-align: center;
+}
+.fw-300 {
+	font-weight: 300;
+}
+.centered-content {
+	max-width: auto;
+}
+.site-footer {
+	background-color: $background-color_2;
+	margin: 2rem;
+}
+.footer-content {
+	padding: 3rem 0;
+	display: flex;
+	justify-content: space-between;
+}
+.copyright {
+	color: $color_3;
+	margin-top: 2rem;
+}

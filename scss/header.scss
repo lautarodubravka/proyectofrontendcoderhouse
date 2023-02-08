@@ -1,0 +1,52 @@
+.site-header {
+	background-color: $background-color_2;
+	padding: 1rem 0 3rem 0;
+	.contenido-header {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		text-align: center;
+		h1 {
+			font-weight: 300;
+		}
+	}
+	.barra {
+		padding-top: 3rem;
+	}
+	.navegacion {
+		a {
+			color: $color_3;
+			text-decoration: none;
+			font-size: 2.2rem;
+			display: block;
+			&:hover {
+				color: $color_4;
+			}
+		}
+	}
+}
+.site-header.inicio {
+	background-image: url(../img/header.png);
+	background-position: center center;
+	background-size: cover;
+	height: 60vh;
+	min-height: 40rem;
+}
+.navegacion {
+	a {
+		color: $color_5;
+		text-decoration: none;
+		font-size: 2rem;
+		display: block;
+		margin: 2rem, 2rem;
+	}
+}
+a {
+	&:last-of-type {
+		margin: 0;
+	}
+	&:hover {
+		color: $color_6;
+	}
+}
