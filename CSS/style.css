@@ -139,7 +139,9 @@ a:hover{
   margin-bottom: 1rem;
 }
 .card-text {
-  color: #252323; }
+  color: #252323;
+  text-align: center;
+}
 
 .card-img-top {
    width: 100%;

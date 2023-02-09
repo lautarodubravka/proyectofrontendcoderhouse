@@ -15,10 +15,14 @@ $background-color_3: #c6d6d5;
 @import "footer";
 
 /*CARDS*/
+.container-fluid {
+	margin-bottom: 1rem;
+	padding: 1rem 1rem;
+}
 	.card {
 	width: 100%;
-	height: 100%;
 	text-align: center;
+	display: flex;
 	overflow: hidden;
 	animation: ease-in-out;
 	transform-origin: center;
@@ -29,23 +33,11 @@ $background-color_3: #c6d6d5;
 	  }
 	img {
 	width: 100%;
-	height: auto;
 	display: block;
 	margin: 0 auto;
 	}
 	.card-body {
-	p {
-	margin: 0;
-	padding: 1rem;
-	text-align:justify;
-	font-size: 1rem;
-	line-height: 1.5;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 6;
-	-webkit-box-orient: vertical;
-	}
+margin-bottom: 2rem;
 	}
 	}
 .card-section {
@@ -54,25 +46,24 @@ $background-color_3: #c6d6d5;
 }
 .card-text {
 	color: $color_7;
+	text-align: center;
+	align-content: space-between;
 }
 .card-img-top {
 	width: 100%;
-	height: auto;
 	object-fit: cover;
 }
 .text-margin {
-	margin: 0 40px;
-	margin-bottom: 1rem;
+	margin: 0rem 4rem;
+	margin-bottom: 6rem;
 }
 .small-img {
 	width: 100%;
-	height: auto;
 }
 #carouselNosotros {
 	.carousel-item {
 		img {
 			width: 50%;
-			height: auto;
 			align-items: center;
 		}
 	}
