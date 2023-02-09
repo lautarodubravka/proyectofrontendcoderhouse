@@ -144,17 +144,23 @@ a:hover {
   margin-bottom: 1rem;
   padding: 1rem 1rem; }
 
+.card-prices-container {
+  margin-top: 2rem; }
+
 .card {
-  width: 100%;
+  width: 95%;
+  height: 95%;
   text-align: center;
   display: flex;
   overflow: hidden;
-  animation: ease-in-out;
+  animation: ease-out;
   transform-origin: center;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  margin: auto; }
   .card:hover {
-    transform: scale(1);
-    cursor: pointer; }
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #1dc1d6; }
   .card img {
     width: 100%;
     display: block;
@@ -164,20 +170,27 @@ a:hover {
 
 .card-section {
   margin-bottom: 1rem;
-  padding: 1rem 1rem; }
+  padding: 1rem 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .card-text {
   color: #252323;
   text-align: center;
-  align-content: space-between; }
+  align-content: space-between;
+  text-overflow: ellipsis; }
 
 .card-img-top {
   width: 100%;
   object-fit: cover; }
 
+/*NOSOTROS*/
 .text-margin {
   margin: 0rem 4rem;
-  margin-bottom: 6rem; }
+  margin-bottom: 8rem; }
 
 .small-img {
   width: 100%; }
