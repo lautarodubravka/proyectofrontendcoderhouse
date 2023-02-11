@@ -140,6 +140,21 @@ a:hover {
   margin-top: 2rem; }
 
 /*CARDS*/
+.card {
+  width: 95%;
+  height: 95%;
+  text-align: center;
+  display: flex;
+  overflow: hidden;
+  animation: ease-out;
+  transform-origin: center;
+  margin-bottom: 1rem;
+  margin: auto; }
+  .card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #1dc1d6; }
+
 .container-fluid {
   margin-bottom: 1rem;
   padding: 1rem 1rem; }
